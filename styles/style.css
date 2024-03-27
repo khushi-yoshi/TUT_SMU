@@ -1,0 +1,159 @@
+/* Navigation Bar Styles */
+.navbar {
+    display: flex; /* Use flexbox to lay out children */
+    align-items: center; /* Align children vertically */
+    height: 150px; /* Height as per the provided nav bar */
+    background-color: #004B8D; /* Blue background to match the nav bar in the image */
+}
+
+.navbar-logo {
+    background-color: #fff; /* White background for the logo */
+    display: flex; /* Flex to align the logo image */
+    align-items: center; /* Center the logo vertically */
+    justify-content: center; /* Center the logo horizontally */
+    height: 100%; /* Full height of the navbar */
+    padding-right: 1rem; /* Space between logo and color bar */
+}
+
+.navbar-logo img {
+    display: block; /* Remove any default inline spacing */
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Adjust width to content */
+    max-height: 150px; /* Maximum height of the logo */
+    max-width: 200px; /* Maximum width of the logo */
+}
+
+.color-bar {
+    flex-grow: 1; /* Take up the remaining space */
+    background-color: #004B8D; /* Blue background to match the nav bar */
+    height: 100%; /* Full height of the navbar */
+}
+
+.navbar a.logout-btn {
+    color: #f2f2f2; /* Light color text for logout button */
+    text-align: center; /* Center text inside the button */
+    padding: 14px 16px; /* Padding for the button */
+    text-decoration: none; /* No underline on the text */
+    font-size: 17px; /* Font size for the text */
+    margin-left: auto; /* Align the button to the right */
+}
+
+.navbar a.logout-btn:hover {
+    background-color: #ddd; /* Hover background color */
+    color: black; /* Hover text color */
+}
+
+/* Body and Container Styles from index.css */
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #8a704c;
+    padding: 70px;
+    border-radius: 20px;
+    color: #ffffff;
+    width: 500px;
+    height: auto;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.form-input {
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.form-input input {
+    width: 100%;
+    padding: 15px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #141b4d;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.submit-button:hover {
+    background-color: #0a0f37;
+}
+
+.error-msg {
+    color: #615e5e;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    max-width: 200px;
+}
+
+#smu-logo {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+}
+
+/* Media query for phones */
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .form-input input {
+        padding: 12px;
+    }
+
+    .submit-button {
+        padding: 12px;
+    }
+
+    .error-msg {
+        margin-bottom: 15px;
+    }
+
+}

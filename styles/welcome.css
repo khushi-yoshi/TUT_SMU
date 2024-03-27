@@ -1,0 +1,133 @@
+/* General resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff00; /* light background for the overall page */
+}
+
+/* Header styles */
+header {
+    background-color: #1E33F1; /* SMU official dark blue */
+    color: #ffffff; /* White text */
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 8px solid #eb0101; /* Thick border at the bottom */
+    height: 150px; /* Set the height of the header */
+    padding-left: 0px;
+}
+
+.logo {
+    max-width: 200px; /* Logo width */
+    height: auto; /* Auto height for responsiveness */
+    /* background-color: #ffffff36; */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    height: 141px; /* Set the height to 100% of the parent container */
+    background-color: #ffffff;
+}
+
+.logout-button {
+    background: #926921;
+    border: 2px solid rgb(228, 209, 36);
+    color: rgb(8, 5, 5);
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.logout-button:hover {
+    background-color: rgb(167, 7, 7);
+    color: #0033A0;
+}
+
+/* Container for content */
+.container {
+    padding-top: 150px; /* Add space between header and container */
+    padding-bottom: 2em; /* Add padding at the bottom */
+    min-width: 500px; /* Ensure minimum width */
+    margin: auto;
+    text-align: center;
+    border: 2px solid #000000;
+    background-color: #69aae1;
+    max-width: 1000px; /* Set maximum width for the container */
+    margin-top: 120px; /* Adjust margin-top to add space between header and container */
+}
+
+
+
+/* Welcome heading */
+.welcome-heading h2 {
+    color: #FFFFFF;
+    background-color: #0033A0; /* SMU official dark blue */
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    padding-top: 10;
+    margin-bottom: 50px; /* Adjust margin-top to add space between header and container */
+
+}
+
+/* Course selection dropdown */
+.select-course {
+    margin: 1em 0;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #b8b3b3;
+}
+
+/* Add a Course Button */
+.add-course-button {
+    padding-top: 20px;
+    background: #a5916e;
+    color: #FFFFFF; /* White text */
+    padding: 10px 20px;
+    border-radius: 5px; /* Adjust border radius */
+    border: none;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition on hover */
+    min-width: 150px; /* Set min-width for button */
+}
+
+.add-course-button:hover {
+    background: linear-gradient(#CC291E, #A32118); /* Darker gradient on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Media Queries */
+@media only screen and (max-width: 480px) {
+    /* Adjustments for mobile */
+    .logo img {
+        width: 80px; /* Reduce logo size for smaller screens */
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Adjustments for tablets */
+    .logo img {
+        width: 100px; /* Adjust logo size for tablets */
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    /* Adjustments for desktops */
+    .logo img {
+        width: 120px; /* Reset logo size for desktops */
+    }
+}
+

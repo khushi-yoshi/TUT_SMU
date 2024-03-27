@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#smu-logo {
+    width: 150px; /* Adjust as needed */
+    height: auto;
+}
+
+h1 {
+    color: #003366; /* Dark blue color; adjust the exact shade as per the brand */
+    margin: 10px 0;
+}
+
+.import-instructions {
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #333; /* Added for better readability */
+}
+
+input[type="text"],
+select,
+input[type="file"],
+textarea {
+    width: calc(100% - 22px); /* Adjusted width to accommodate for padding and border */
+    padding: 10px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #030303; /* Adjust the color as needed */
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0 20px; /* Increased bottom margin for better separation */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+}
+
+.notes {
+    font-size: 0.9em;
+    color: #f60a0a; /* Slightly lighter color for notes */
+    margin-top: 20px;
+    padding: 15px; /* Adding padding */
+    border: 1px solid #7c1212; /* Adding border */
+    border-radius: 4px; /* Adding border radius */
+    resize: none; /* Disabling resize */
+    width: calc(100% - 22px); /* Adjusted width to match other form elements */
+    min-height: 150px; /* Adjusted minimum height */
+}
+

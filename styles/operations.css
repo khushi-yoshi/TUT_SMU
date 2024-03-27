@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Adjusted to a lighter background */
+    margin: 0;
+    padding: 10;
+    color: #333; /* Dark grey color for text for better readability */
+}
+
+.container {
+    max-width: 1000px; /* Adjusted for a more centered look */
+    margin: 20px auto; /* More margin for better spacing from the window edges */
+    background-color: #ffffff; /* White background for the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow around the container */
+}
+
+.title-container {
+    background-color: #ffffff; /* The blue background color for the title section */
+    color: black;
+    padding: 10px 20px; /* Padding for spacing around title and buttons */
+    display: flex;
+    justify-content: space-between; /* Space between title and buttons */
+    align-items: center; /* Align title and buttons vertically */
+}
+
+.title-container h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Adjust font-size as needed */
+}
+
+.buttons button {
+    padding: 8px 15px;
+    margin: 0 5px; /* Adjusted for horizontal spacing */
+    background-color: #8d7463; /* Button fill color as specified */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Smaller font-size for buttons */
+}
+
+.buttons button:hover {
+    background-color: #7c6659; /* A darker shade for hover effect */
+}
+
+.table-container {
+    padding: 20px; /* Padding around the table for spacing */
+    background-color: #006ecd;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0; /* Remove margin to align with title section */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #c5c1bd; /* Header background color to match buttons */
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey for even rows */
+}
+
+tr:hover {
+    background-color: #e0e0e0; /* A slightly darker grey for hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .title-container {
+        flex-direction: column; /* Stack title and buttons on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .buttons {
+        flex-direction: row; /* Keep buttons side by side on smaller screens */
+        margin-top: 10px; /* Add some space between the title and buttons */
+    }
+
+    .buttons button {
+        font-size: 12px; /* Smaller text in buttons on smaller screens */
+    }
+
+    header,
+    .table-container {
+        padding: 10px; /* Less padding on smaller screens */
+    }
+}
